@@ -1,0 +1,132 @@
+{
+    "vcc wrapper": {
+        "prefix": "vcc wrapper",
+        "body": [
+            "<div class=\"bg-light lter b-b wrapper-md\">",
+            "    <h1 class=\"m-n font-thin h3\">$1</h1>",
+            "</div>",
+            "<div class=\"wrapper-md\" ng-controller=\"$2\">",
+            "</div>"
+        ],
+        "description": "新页模板"
+    },
+    "vcc form": {
+        "prefix": "vcc form",
+        "body": [
+            "<form name=\"$1\" class=\"form-validation\">",
+            "</form>"
+        ],
+        "description": "表单模板"
+    },
+    "vcc form input": {
+        "prefix": "vcc form input",
+        "body": [
+            "<div class=\"form-group col-sm-3\">",
+            "   <label class=\"text-right\">$1</label>",
+            "   <div><input class=\"form-control\" placeholder=\"\" ng-model=\"$3\"></div>",
+            "</div>"
+        ],
+        "description": "表单输入框"
+    },
+    "vcc form selectize single": {
+        "prefix": "vcc form selectize single",
+        "body": [
+            "<div class=\"form-group col-sm-3\">",
+            "   <label class=\"text-right\">$1</label>",
+            "   <div>", 
+            "       <selectize placeholder=\"请选择\" config=\"{maxItems:1,labelField:'$2',valueField:'$3',searchField:'$3'}\" options=\"$4\" ng-model=\"$5\"></selectize>", 
+            "   </div>",
+            "</div>"
+        ],
+        "description": "表单搜索单选"
+    },
+    "vcc form selectize tags": {
+        "prefix": "vcc form selectize tags",
+        "body": [
+            "<div class=\"form-group col-sm-3\">",
+            "   <label class=\"text-right\">$1</label>",
+            "   <div>", 
+            "       <selectize placeholder=\"请选择\" config=\"{labelField:'$2',valueField:'$3',searchField:'$3'}\" options=\"$4\" ng-model=\"$5\"></selectize>", 
+            "   </div>",
+            "</div>"
+        ],
+        "description": "表单标签多选"
+    },
+    "vcc form switch": {
+        "prefix": "vcc form switch",
+        "body": [
+            "<div class=\"form-group col-sm-3\">",
+            "   <label class=\"text-right\">$1</label>",
+            "   <div>",
+            "       <label class=\"i-switch bg-info m-t-xs m-r\">",
+            "           <input type=\"checkbox\" ng-true-value=\"1\" ng-false-value=\"0\" checked>",
+            "           <i></i>",
+            "       </label>",
+            "   </div>",
+            "</div>"
+        ],
+        "description": "表单开关"
+    },
+    "vcc form checkboxs": {
+        "prefix": "vcc form checkboxs",
+        "body": [
+            "<div class=\"form-group col-sm-3\">",
+            "   <label class=\"text-right\">$1</label>",
+            "   <div>",
+            "       <label class=\"m-r-sm i-checks\" ng-repeat=\"data in $2\">",
+            "           <input type=\"checkbox\" ng-model=\"data._id\"><i></i> {{data.name}}",
+            "       </label>",
+            "   </div>",
+            "</div>"
+        ],
+        "description": "表单多选框" 
+    },
+    "vcc form inputgroup": {
+        "prefix": "vcc form inputgroup",
+        "body": [
+            "<div class=\"form-group col-sm-3\">",
+            "    <label class=\"text-right\">$1</label>",
+            "    <div class=\"input-group\">",
+            "        <input class=\"form-control\">",
+            "        <span class=\"input-group-btn\">",
+            "            <button type=\"button\" class=\"btn btn-default\">$2</button>",
+            "        </span>",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "表单带按钮输入框" 
+    },
+    "vcc dropdown": {
+        "prefix": "vcc dropdown",
+        "body": [
+            "<div class=\"btn-group-sm\" uib-dropdown>",
+            "    <button class=\"btn\" uib-dropdown-toggle>下拉<span class=\"caret\"></span></button>",
+            "    <ul uib-dropdown-menu>",
+            "        <li><a href=\"\">$1</a></li>",
+            "        <li class=\"divider\"></li>",
+            "        <li><a href=\"\">$2</a></li>",
+            "    </ul>",
+            "</div>"
+        ],
+        "description": "下拉按钮" 
+    },
+    "vcc pagination": {
+        "prefix": "vcc pagination",
+        "body": [
+            "<div class=\"col-sm-4 hidden-xs\">",
+            "</div>",
+            "<div class=\"col-sm-4 text-center\">",
+            "    <small class=\"text-muted inline m-t-sm m-b-sm\">总共{{page.count}}条,当前{{page.page}}/{{page.total}}页</small>",
+            "</div>",
+            "<div class=\"col-sm-4 text-right text-center-xs\">",
+            "    <ul class=\"pagination pagination-sm m-t-none m-b-none\">",
+            "        <li><a href=\"\" ng-click=\"search(1)\"><i class=\"fa fa-angle-double-left\"></i></a></li>",
+            "        <li><a href=\"\" ng-click=\"search(page.page - 1)\"><i class=\"fa fa-angle-left\"></i></a></li>",
+            "        <li><a href=\"\" ng-click=\"search(page.page + 1)\"><i class=\"fa fa-angle-right\"></i></a></li>",
+            "        <li><a href=\"\" ng-click=\"search(page.total)\"><i class=\"fa fa-angle-double-right\"></i></a></li>",
+            "    </ul>",
+            "</div>"
+        ],
+        "description": "分页模板" 
+    }
+}

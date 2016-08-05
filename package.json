@@ -1,0 +1,26 @@
+{
+    "name": "vcctemplate-snippets",
+    "displayName": "VCC Template Snippets",
+    "description": "Full VCC Template tags including HTML5 Snippets",
+    "version": "0.2.0",
+    "publisher": "wingkung",
+    "icon": "",
+    "engines": {
+        "vscode": "^0.10.1"
+    },
+    "galleryBanner": {
+        "color": "#1E81C1",
+        "theme": "light"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
