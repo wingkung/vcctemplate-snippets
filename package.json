@@ -2,7 +2,7 @@
     "name": "vcctemplate-snippets",
     "displayName": "VCC Template Snippets",
     "description": "Full VCC Template tags including HTML5 Snippets",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "publisher": "wingkung",
     "icon": "",
     "engines": {

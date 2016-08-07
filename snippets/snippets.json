@@ -10,6 +10,20 @@
         ],
         "description": "新页模板"
     },
+    "vcc dialog": {
+        "prefix": "vcc dialog",
+        "body": [
+            "<div class=\"wrapper-md\">",
+            "   <div class=\"panel-body\">",                   
+            "   </div>",
+            "   <div class=\"panel-footer text-center\">",
+            "       <button class=\"btn btn-warning\"><i class=\"fa fa-save\"></i>&nbsp;保存</button>",
+            "       <button class=\"btn btn-default\"><i class=\"fa fa-times\"></i>&nbsp;关闭</button>",
+            "   </div>",
+            "</div>"
+        ],
+        "description": "对话框模板"
+    },
     "vcc form": {
         "prefix": "vcc form",
         "body": [
