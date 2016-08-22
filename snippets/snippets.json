@@ -136,7 +136,9 @@
             "<div class=\"form-group col-sm-3\">",
             "   <label class=\"text-right\">$1</label>",
             "   <div>", 
-            "       <selectize placeholder=\"请选择\" config=\"{maxItems:1,labelField:'$2',valueField:'$3',searchField:'$3'}\" options=\"$4\" ng-model=\"$5\"></selectize>", 
+            "       <select selectize=\"{labelField:'$2',valueField:'$3',searchField:'$3'}\" ng-options=\"item.id as item.name for item in $4\" ng-model=\"$5\">",
+            "           <option>请选择</option>",
+            "       </select>", 
             "   </div>",
             "</div>"
         ],
@@ -148,7 +150,9 @@
             "<div class=\"form-group col-sm-3\">",
             "   <label class=\"text-right\">$1</label>",
             "   <div>", 
-            "       <selectize placeholder=\"请选择\" config=\"{labelField:'$2',valueField:'$3',searchField:'$3'}\" options=\"$4\" ng-model=\"$5\"></selectize>", 
+            "       <select multiple=\"multiple\" selectize=\"{labelField:'$2',valueField:'$3',searchField:'$3'}\" ng-options=\"item.id as item.name for item in $4\" ng-model=\"$5\">",
+            "           <option>请选择</option>",
+            "       </select>",  
             "   </div>",
             "</div>"
         ],
